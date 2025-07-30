@@ -1,6 +1,6 @@
 outdir: results/
 msa_paths: [
-   /home/diepht/minhntn/Predict_data/data/example.phy,
+   /home/diepht/minhntn/Predict_Data/data/example.phy,
 ]
 software:
   raxml-ng:
