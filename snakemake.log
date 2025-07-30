@@ -1,0 +1,770 @@
+nohup: ignoring input
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                        count
+---------------------------------------  -------
+all                                            1
+collect_eval_logs                              1
+collect_eval_trees                             1
+collect_parsimony_logs                         1
+collect_parsimony_trees                        1
+collect_plausible_trees                        1
+collect_search_logs                            1
+collect_search_trees                           1
+database_to_training_dataframe                 1
+iqtree_filter_unique_tree_topologies           1
+iqtree_pars_tree                              45
+iqtree_rand_tree                              50
+iqtree_rf_distance_search_trees                1
+iqtree_rfdistance_eval_trees                   1
+iqtree_rfdistance_parsimony_trees              1
+iqtree_rfdistance_plausible_trees              1
+iqtree_significance_tests_on_eval_trees        1
+move_db                                        1
+parsimony_tree                                95
+reevaluate_iqtree_pars_tree                   45
+reevaluate_iqtree_rand_tree                   50
+save_best_eval_tree                            1
+save_data                                      1
+total                                        303
+
+Select jobs to execute...
+
+[Sat Jul 26 15:18:03 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_32.treefile, results/example.phy/output_files/iqtree/inference/pars_32.log, results/example.phy/output_files/iqtree/inference/pars_32.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_32.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_32.snakelog
+    jobid: 36
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_32.treefile, results/example.phy/output_files/iqtree/inference/pars_32.log
+    wildcards: msa=example.phy, seed=32
+    resources: tmpdir=/tmp
+
+
+[Sat Jul 26 15:18:03 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_77.treefile, results/example.phy/output_files/parsimony/seed_77.log
+    log: results/example.phy/output_files/parsimony/seed_77.snakelog
+    jobid: 293
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_77.treefile, results/example.phy/output_files/parsimony/seed_77.log
+    wildcards: msa=example.phy, seed=77
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sat Jul 26 16:09:56 2025]
+Finished job 36.
+1 of 303 steps (0.3%) done
+Select jobs to execute...
+
+[Sat Jul 26 16:09:56 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_83.treefile, results/example.phy/output_files/parsimony/seed_83.log
+    log: results/example.phy/output_files/parsimony/seed_83.snakelog
+    jobid: 299
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_83.log, results/example.phy/output_files/parsimony/seed_83.treefile
+    wildcards: msa=example.phy, seed=83
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sat Jul 26 16:42:04 2025]
+Finished job 293.
+2 of 303 steps (1%) done
+Select jobs to execute...
+
+[Sat Jul 26 16:42:04 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_68.treefile, results/example.phy/output_files/parsimony/seed_68.log
+    log: results/example.phy/output_files/parsimony/seed_68.snakelog
+    jobid: 284
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_68.treefile, results/example.phy/output_files/parsimony/seed_68.log
+    wildcards: msa=example.phy, seed=68
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sat Jul 26 17:04:15 2025]
+Finished job 299.
+3 of 303 steps (1%) done
+Select jobs to execute...
+
+[Sat Jul 26 17:04:15 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_98.treefile, results/example.phy/output_files/parsimony/seed_98.log
+    log: results/example.phy/output_files/parsimony/seed_98.snakelog
+    jobid: 314
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_98.treefile, results/example.phy/output_files/parsimony/seed_98.log
+    wildcards: msa=example.phy, seed=98
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sat Jul 26 17:25:38 2025]
+Finished job 284.
+4 of 303 steps (1%) done
+Select jobs to execute...
+
+[Sat Jul 26 17:25:38 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_30.treefile, results/example.phy/output_files/iqtree/inference/pars_30.log, results/example.phy/output_files/iqtree/inference/pars_30.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_30.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_30.snakelog
+    jobid: 34
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_30.log, results/example.phy/output_files/iqtree/inference/pars_30.treefile
+    wildcards: msa=example.phy, seed=30
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 17:53:30 2025]
+Finished job 314.
+5 of 303 steps (2%) done
+Select jobs to execute...
+
+[Sat Jul 26 17:53:30 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_9.treefile, results/example.phy/output_files/iqtree/inference/pars_9.log, results/example.phy/output_files/iqtree/inference/pars_9.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_9.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_9.snakelog
+    jobid: 13
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_9.treefile, results/example.phy/output_files/iqtree/inference/pars_9.log
+    wildcards: msa=example.phy, seed=9
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 17:55:12 2025]
+Finished job 34.
+6 of 303 steps (2%) done
+Select jobs to execute...
+
+[Sat Jul 26 17:55:12 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_33.treefile, results/example.phy/output_files/iqtree/inference/pars_33.log, results/example.phy/output_files/iqtree/inference/pars_33.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_33.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_33.snakelog
+    jobid: 37
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_33.treefile, results/example.phy/output_files/iqtree/inference/pars_33.log
+    wildcards: msa=example.phy, seed=33
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 18:28:00 2025]
+Finished job 13.
+7 of 303 steps (2%) done
+Select jobs to execute...
+
+[Sat Jul 26 18:28:00 2025]
+rule reevaluate_iqtree_pars_tree:
+    input: results/example.phy/output_files/iqtree/inference/pars_9.treefile
+    output: results/example.phy/output_files/iqtree/evaluation/pars_9.log, results/example.phy/output_files/iqtree/evaluation/pars_9.treefile, results/example.phy/output_files/iqtree/evaluation/pars_9.iqtree
+    log: results/example.phy/output_files/iqtree/evaluation/pars_9.snakelog
+    jobid: 116
+    reason: Missing output files: results/example.phy/output_files/iqtree/evaluation/pars_9.log, results/example.phy/output_files/iqtree/evaluation/pars_9.treefile; Input files updated by another job: results/example.phy/output_files/iqtree/inference/pars_9.treefile
+    wildcards: msa=example.phy, seed=9
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 18:31:40 2025]
+Finished job 116.
+8 of 303 steps (3%) done
+Select jobs to execute...
+
+[Sat Jul 26 18:31:40 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_17.treefile, results/example.phy/output_files/iqtree/inference/pars_17.log, results/example.phy/output_files/iqtree/inference/pars_17.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_17.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_17.snakelog
+    jobid: 21
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_17.log, results/example.phy/output_files/iqtree/inference/pars_17.treefile
+    wildcards: msa=example.phy, seed=17
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 18:32:46 2025]
+Finished job 37.
+9 of 303 steps (3%) done
+Select jobs to execute...
+
+[Sat Jul 26 18:32:46 2025]
+rule iqtree_rand_tree:
+    output: results/example.phy/output_files/iqtree/inference/rand_56.treefile, results/example.phy/output_files/iqtree/inference/rand_56.log, results/example.phy/output_files/iqtree/inference/rand_56.ckp.gz, results/example.phy/output_files/iqtree/inference/rand_56.iqtree
+    log: results/example.phy/output_files/iqtree/inference/rand_56.snakelog
+    jobid: 60
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/rand_56.log, results/example.phy/output_files/iqtree/inference/rand_56.treefile
+    wildcards: msa=example.phy, seed=56
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 19:07:17 2025]
+Finished job 21.
+10 of 303 steps (3%) done
+Select jobs to execute...
+
+[Sat Jul 26 19:07:17 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_9.treefile, results/example.phy/output_files/parsimony/seed_9.log
+    log: results/example.phy/output_files/parsimony/seed_9.snakelog
+    jobid: 225
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_9.treefile, results/example.phy/output_files/parsimony/seed_9.log
+    wildcards: msa=example.phy, seed=9
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sat Jul 26 19:44:19 2025]
+Finished job 60.
+11 of 303 steps (4%) done
+Select jobs to execute...
+
+[Sat Jul 26 19:44:19 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_24.treefile, results/example.phy/output_files/parsimony/seed_24.log
+    log: results/example.phy/output_files/parsimony/seed_24.snakelog
+    jobid: 240
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_24.log, results/example.phy/output_files/parsimony/seed_24.treefile
+    wildcards: msa=example.phy, seed=24
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sat Jul 26 19:59:56 2025]
+Finished job 225.
+12 of 303 steps (4%) done
+Select jobs to execute...
+
+[Sat Jul 26 19:59:57 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_39.treefile, results/example.phy/output_files/parsimony/seed_39.log
+    log: results/example.phy/output_files/parsimony/seed_39.snakelog
+    jobid: 255
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_39.treefile, results/example.phy/output_files/parsimony/seed_39.log
+    wildcards: msa=example.phy, seed=39
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sat Jul 26 20:29:03 2025]
+Finished job 240.
+13 of 303 steps (4%) done
+Select jobs to execute...
+
+[Sat Jul 26 20:29:03 2025]
+rule reevaluate_iqtree_pars_tree:
+    input: results/example.phy/output_files/iqtree/inference/pars_30.treefile
+    output: results/example.phy/output_files/iqtree/evaluation/pars_30.log, results/example.phy/output_files/iqtree/evaluation/pars_30.treefile, results/example.phy/output_files/iqtree/evaluation/pars_30.iqtree
+    log: results/example.phy/output_files/iqtree/evaluation/pars_30.snakelog
+    jobid: 137
+    reason: Missing output files: results/example.phy/output_files/iqtree/evaluation/pars_30.treefile, results/example.phy/output_files/iqtree/evaluation/pars_30.log; Input files updated by another job: results/example.phy/output_files/iqtree/inference/pars_30.treefile
+    wildcards: msa=example.phy, seed=30
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 20:32:05 2025]
+Finished job 137.
+14 of 303 steps (5%) done
+Select jobs to execute...
+
+[Sat Jul 26 20:32:05 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_5.treefile, results/example.phy/output_files/iqtree/inference/pars_5.log, results/example.phy/output_files/iqtree/inference/pars_5.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_5.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_5.snakelog
+    jobid: 9
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_5.log, results/example.phy/output_files/iqtree/inference/pars_5.treefile
+    wildcards: msa=example.phy, seed=5
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 20:48:18 2025]
+Finished job 255.
+15 of 303 steps (5%) done
+Select jobs to execute...
+
+[Sat Jul 26 20:48:19 2025]
+rule iqtree_rand_tree:
+    output: results/example.phy/output_files/iqtree/inference/rand_68.treefile, results/example.phy/output_files/iqtree/inference/rand_68.log, results/example.phy/output_files/iqtree/inference/rand_68.ckp.gz, results/example.phy/output_files/iqtree/inference/rand_68.iqtree
+    log: results/example.phy/output_files/iqtree/inference/rand_68.snakelog
+    jobid: 72
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/rand_68.log, results/example.phy/output_files/iqtree/inference/rand_68.treefile
+    wildcards: msa=example.phy, seed=68
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 21:02:12 2025]
+Finished job 9.
+16 of 303 steps (5%) done
+Select jobs to execute...
+
+[Sat Jul 26 21:02:12 2025]
+rule reevaluate_iqtree_pars_tree:
+    input: results/example.phy/output_files/iqtree/inference/pars_33.treefile
+    output: results/example.phy/output_files/iqtree/evaluation/pars_33.log, results/example.phy/output_files/iqtree/evaluation/pars_33.treefile, results/example.phy/output_files/iqtree/evaluation/pars_33.iqtree
+    log: results/example.phy/output_files/iqtree/evaluation/pars_33.snakelog
+    jobid: 140
+    reason: Missing output files: results/example.phy/output_files/iqtree/evaluation/pars_33.log, results/example.phy/output_files/iqtree/evaluation/pars_33.treefile; Input files updated by another job: results/example.phy/output_files/iqtree/inference/pars_33.treefile
+    wildcards: msa=example.phy, seed=33
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 21:05:44 2025]
+Finished job 140.
+17 of 303 steps (6%) done
+Select jobs to execute...
+
+[Sat Jul 26 21:05:44 2025]
+rule iqtree_rand_tree:
+    output: results/example.phy/output_files/iqtree/inference/rand_71.treefile, results/example.phy/output_files/iqtree/inference/rand_71.log, results/example.phy/output_files/iqtree/inference/rand_71.ckp.gz, results/example.phy/output_files/iqtree/inference/rand_71.iqtree
+    log: results/example.phy/output_files/iqtree/inference/rand_71.snakelog
+    jobid: 75
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/rand_71.treefile, results/example.phy/output_files/iqtree/inference/rand_71.log
+    wildcards: msa=example.phy, seed=71
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 22:08:34 2025]
+Finished job 72.
+18 of 303 steps (6%) done
+Select jobs to execute...
+
+[Sat Jul 26 22:08:34 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_53.treefile, results/example.phy/output_files/parsimony/seed_53.log
+    log: results/example.phy/output_files/parsimony/seed_53.snakelog
+    jobid: 269
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_53.log, results/example.phy/output_files/parsimony/seed_53.treefile
+    wildcards: msa=example.phy, seed=53
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sat Jul 26 22:21:12 2025]
+Finished job 75.
+19 of 303 steps (6%) done
+Select jobs to execute...
+
+[Sat Jul 26 22:21:12 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_38.treefile, results/example.phy/output_files/parsimony/seed_38.log
+    log: results/example.phy/output_files/parsimony/seed_38.snakelog
+    jobid: 254
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_38.treefile, results/example.phy/output_files/parsimony/seed_38.log
+    wildcards: msa=example.phy, seed=38
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sat Jul 26 22:55:23 2025]
+Finished job 269.
+20 of 303 steps (7%) done
+Select jobs to execute...
+
+[Sat Jul 26 22:55:23 2025]
+rule iqtree_rand_tree:
+    output: results/example.phy/output_files/iqtree/inference/rand_61.treefile, results/example.phy/output_files/iqtree/inference/rand_61.log, results/example.phy/output_files/iqtree/inference/rand_61.ckp.gz, results/example.phy/output_files/iqtree/inference/rand_61.iqtree
+    log: results/example.phy/output_files/iqtree/inference/rand_61.snakelog
+    jobid: 65
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/rand_61.log, results/example.phy/output_files/iqtree/inference/rand_61.treefile
+    wildcards: msa=example.phy, seed=61
+    resources: tmpdir=/tmp
+
+[Sat Jul 26 23:08:37 2025]
+Finished job 254.
+21 of 303 steps (7%) done
+Select jobs to execute...
+
+[Sat Jul 26 23:08:37 2025]
+rule iqtree_rand_tree:
+    output: results/example.phy/output_files/iqtree/inference/rand_64.treefile, results/example.phy/output_files/iqtree/inference/rand_64.log, results/example.phy/output_files/iqtree/inference/rand_64.ckp.gz, results/example.phy/output_files/iqtree/inference/rand_64.iqtree
+    log: results/example.phy/output_files/iqtree/inference/rand_64.snakelog
+    jobid: 68
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/rand_64.treefile, results/example.phy/output_files/iqtree/inference/rand_64.log
+    wildcards: msa=example.phy, seed=64
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 00:16:06 2025]
+Finished job 65.
+22 of 303 steps (7%) done
+Select jobs to execute...
+
+[Sun Jul 27 00:16:06 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_23.treefile, results/example.phy/output_files/parsimony/seed_23.log
+    log: results/example.phy/output_files/parsimony/seed_23.snakelog
+    jobid: 239
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_23.log, results/example.phy/output_files/parsimony/seed_23.treefile
+    wildcards: msa=example.phy, seed=23
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 00:26:36 2025]
+Finished job 68.
+23 of 303 steps (8%) done
+Select jobs to execute...
+
+[Sun Jul 27 00:26:36 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_8.treefile, results/example.phy/output_files/parsimony/seed_8.log
+    log: results/example.phy/output_files/parsimony/seed_8.snakelog
+    jobid: 224
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_8.treefile, results/example.phy/output_files/parsimony/seed_8.log
+    wildcards: msa=example.phy, seed=8
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 01:02:46 2025]
+Finished job 239.
+24 of 303 steps (8%) done
+Select jobs to execute...
+
+[Sun Jul 27 01:02:46 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_40.treefile, results/example.phy/output_files/iqtree/inference/pars_40.log, results/example.phy/output_files/iqtree/inference/pars_40.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_40.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_40.snakelog
+    jobid: 44
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_40.treefile, results/example.phy/output_files/iqtree/inference/pars_40.log
+    wildcards: msa=example.phy, seed=40
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 01:12:40 2025]
+Finished job 224.
+25 of 303 steps (8%) done
+Select jobs to execute...
+
+[Sun Jul 27 01:12:40 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_12.treefile, results/example.phy/output_files/parsimony/seed_12.log
+    log: results/example.phy/output_files/parsimony/seed_12.snakelog
+    jobid: 228
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_12.treefile, results/example.phy/output_files/parsimony/seed_12.log
+    wildcards: msa=example.phy, seed=12
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 01:31:48 2025]
+Finished job 44.
+26 of 303 steps (9%) done
+Select jobs to execute...
+
+[Sun Jul 27 01:31:48 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_37.treefile, results/example.phy/output_files/iqtree/inference/pars_37.log, results/example.phy/output_files/iqtree/inference/pars_37.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_37.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_37.snakelog
+    jobid: 41
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_37.treefile, results/example.phy/output_files/iqtree/inference/pars_37.log
+    wildcards: msa=example.phy, seed=37
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 02:01:01 2025]
+Finished job 41.
+27 of 303 steps (9%) done
+Select jobs to execute...
+
+[Sun Jul 27 02:01:01 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_47.treefile, results/example.phy/output_files/iqtree/inference/pars_47.log, results/example.phy/output_files/iqtree/inference/pars_47.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_47.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_47.snakelog
+    jobid: 51
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_47.treefile, results/example.phy/output_files/iqtree/inference/pars_47.log
+    wildcards: msa=example.phy, seed=47
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 02:08:35 2025]
+Finished job 228.
+28 of 303 steps (9%) done
+Select jobs to execute...
+
+[Sun Jul 27 02:08:35 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_44.treefile, results/example.phy/output_files/iqtree/inference/pars_44.log, results/example.phy/output_files/iqtree/inference/pars_44.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_44.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_44.snakelog
+    jobid: 48
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_44.log, results/example.phy/output_files/iqtree/inference/pars_44.treefile
+    wildcards: msa=example.phy, seed=44
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 02:42:29 2025]
+Finished job 51.
+29 of 303 steps (10%) done
+Select jobs to execute...
+
+[Sun Jul 27 02:42:29 2025]
+rule iqtree_rand_tree:
+    output: results/example.phy/output_files/iqtree/inference/rand_58.treefile, results/example.phy/output_files/iqtree/inference/rand_58.log, results/example.phy/output_files/iqtree/inference/rand_58.ckp.gz, results/example.phy/output_files/iqtree/inference/rand_58.iqtree
+    log: results/example.phy/output_files/iqtree/inference/rand_58.snakelog
+    jobid: 62
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/rand_58.treefile, results/example.phy/output_files/iqtree/inference/rand_58.log
+    wildcards: msa=example.phy, seed=58
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 02:51:02 2025]
+Finished job 48.
+30 of 303 steps (10%) done
+Select jobs to execute...
+
+[Sun Jul 27 02:51:02 2025]
+rule iqtree_rand_tree:
+    output: results/example.phy/output_files/iqtree/inference/rand_82.treefile, results/example.phy/output_files/iqtree/inference/rand_82.log, results/example.phy/output_files/iqtree/inference/rand_82.ckp.gz, results/example.phy/output_files/iqtree/inference/rand_82.iqtree
+    log: results/example.phy/output_files/iqtree/inference/rand_82.snakelog
+    jobid: 86
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/rand_82.log, results/example.phy/output_files/iqtree/inference/rand_82.treefile
+    wildcards: msa=example.phy, seed=82
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 12:57:15 2025]
+Finished job 62.
+31 of 303 steps (10%) done
+Select jobs to execute...
+
+[Sun Jul 27 12:57:15 2025]
+rule iqtree_pars_tree:
+    output: results/example.phy/output_files/iqtree/inference/pars_48.treefile, results/example.phy/output_files/iqtree/inference/pars_48.log, results/example.phy/output_files/iqtree/inference/pars_48.ckp.gz, results/example.phy/output_files/iqtree/inference/pars_48.iqtree
+    log: results/example.phy/output_files/iqtree/inference/pars_48.snakelog
+    jobid: 52
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/pars_48.treefile, results/example.phy/output_files/iqtree/inference/pars_48.log
+    wildcards: msa=example.phy, seed=48
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 13:00:35 2025]
+Finished job 86.
+32 of 303 steps (11%) done
+Select jobs to execute...
+
+[Sun Jul 27 13:00:35 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_94.treefile, results/example.phy/output_files/parsimony/seed_94.log
+    log: results/example.phy/output_files/parsimony/seed_94.snakelog
+    jobid: 310
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_94.treefile, results/example.phy/output_files/parsimony/seed_94.log
+    wildcards: msa=example.phy, seed=94
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 13:26:53 2025]
+Finished job 52.
+33 of 303 steps (11%) done
+Select jobs to execute...
+
+[Sun Jul 27 13:26:53 2025]
+rule reevaluate_iqtree_pars_tree:
+    input: results/example.phy/output_files/iqtree/inference/pars_48.treefile
+    output: results/example.phy/output_files/iqtree/evaluation/pars_48.log, results/example.phy/output_files/iqtree/evaluation/pars_48.treefile, results/example.phy/output_files/iqtree/evaluation/pars_48.iqtree
+    log: results/example.phy/output_files/iqtree/evaluation/pars_48.snakelog
+    jobid: 155
+    reason: Missing output files: results/example.phy/output_files/iqtree/evaluation/pars_48.treefile, results/example.phy/output_files/iqtree/evaluation/pars_48.log; Input files updated by another job: results/example.phy/output_files/iqtree/inference/pars_48.treefile
+    wildcards: msa=example.phy, seed=48
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 13:29:57 2025]
+Finished job 155.
+34 of 303 steps (11%) done
+Select jobs to execute...
+
+[Sun Jul 27 13:29:57 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_27.treefile, results/example.phy/output_files/parsimony/seed_27.log
+    log: results/example.phy/output_files/parsimony/seed_27.snakelog
+    jobid: 243
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_27.log, results/example.phy/output_files/parsimony/seed_27.treefile
+    wildcards: msa=example.phy, seed=27
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 13:50:14 2025]
+Finished job 310.
+35 of 303 steps (12%) done
+Select jobs to execute...
+
+[Sun Jul 27 13:50:14 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_79.treefile, results/example.phy/output_files/parsimony/seed_79.log
+    log: results/example.phy/output_files/parsimony/seed_79.snakelog
+    jobid: 295
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_79.treefile, results/example.phy/output_files/parsimony/seed_79.log
+    wildcards: msa=example.phy, seed=79
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 14:13:35 2025]
+Finished job 243.
+36 of 303 steps (12%) done
+Select jobs to execute...
+
+[Sun Jul 27 14:13:35 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_42.treefile, results/example.phy/output_files/parsimony/seed_42.log
+    log: results/example.phy/output_files/parsimony/seed_42.snakelog
+    jobid: 258
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_42.treefile, results/example.phy/output_files/parsimony/seed_42.log
+    wildcards: msa=example.phy, seed=42
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 14:33:48 2025]
+Finished job 295.
+37 of 303 steps (12%) done
+Select jobs to execute...
+
+[Sun Jul 27 14:33:48 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_57.treefile, results/example.phy/output_files/parsimony/seed_57.log
+    log: results/example.phy/output_files/parsimony/seed_57.snakelog
+    jobid: 273
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_57.treefile, results/example.phy/output_files/parsimony/seed_57.log
+    wildcards: msa=example.phy, seed=57
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 14:56:54 2025]
+Finished job 258.
+38 of 303 steps (13%) done
+Select jobs to execute...
+
+[Sun Jul 27 14:56:54 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_72.treefile, results/example.phy/output_files/parsimony/seed_72.log
+    log: results/example.phy/output_files/parsimony/seed_72.snakelog
+    jobid: 288
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_72.log, results/example.phy/output_files/parsimony/seed_72.treefile
+    wildcards: msa=example.phy, seed=72
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 15:17:48 2025]
+Finished job 273.
+39 of 303 steps (13%) done
+Select jobs to execute...
+
+[Sun Jul 27 15:17:48 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_64.treefile, results/example.phy/output_files/parsimony/seed_64.log
+    log: results/example.phy/output_files/parsimony/seed_64.snakelog
+    jobid: 280
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_64.treefile, results/example.phy/output_files/parsimony/seed_64.log
+    wildcards: msa=example.phy, seed=64
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 15:41:42 2025]
+Finished job 288.
+40 of 303 steps (13%) done
+Select jobs to execute...
+
+[Sun Jul 27 15:41:42 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_87.treefile, results/example.phy/output_files/parsimony/seed_87.log
+    log: results/example.phy/output_files/parsimony/seed_87.snakelog
+    jobid: 303
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_87.treefile, results/example.phy/output_files/parsimony/seed_87.log
+    wildcards: msa=example.phy, seed=87
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 16:03:38 2025]
+Finished job 280.
+41 of 303 steps (14%) done
+Select jobs to execute...
+
+[Sun Jul 27 16:03:38 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_49.treefile, results/example.phy/output_files/parsimony/seed_49.log
+    log: results/example.phy/output_files/parsimony/seed_49.snakelog
+    jobid: 265
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_49.treefile, results/example.phy/output_files/parsimony/seed_49.log
+    wildcards: msa=example.phy, seed=49
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
+[Sun Jul 27 16:27:06 2025]
+Finished job 303.
+42 of 303 steps (14%) done
+Select jobs to execute...
+
+[Sun Jul 27 16:27:06 2025]
+rule iqtree_rand_tree:
+    output: results/example.phy/output_files/iqtree/inference/rand_96.treefile, results/example.phy/output_files/iqtree/inference/rand_96.log, results/example.phy/output_files/iqtree/inference/rand_96.ckp.gz, results/example.phy/output_files/iqtree/inference/rand_96.iqtree
+    log: results/example.phy/output_files/iqtree/inference/rand_96.snakelog
+    jobid: 100
+    reason: Missing output files: results/example.phy/output_files/iqtree/inference/rand_96.treefile, results/example.phy/output_files/iqtree/inference/rand_96.log
+    wildcards: msa=example.phy, seed=96
+    resources: tmpdir=/tmp
+
+[Sun Jul 27 16:50:19 2025]
+Finished job 265.
+43 of 303 steps (14%) done
+Select jobs to execute...
+
+[Sun Jul 27 16:50:19 2025]
+rule parsimony_tree:
+    output: results/example.phy/output_files/parsimony/seed_34.treefile, results/example.phy/output_files/parsimony/seed_34.log
+    log: results/example.phy/output_files/parsimony/seed_34.snakelog
+    jobid: 250
+    reason: Missing output files: results/example.phy/output_files/parsimony/seed_34.treefile, results/example.phy/output_files/parsimony/seed_34.log
+    wildcards: msa=example.phy, seed=34
+    resources: tmpdir=/tmp
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Select jobs to execute...
